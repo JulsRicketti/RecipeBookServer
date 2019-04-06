@@ -1,0 +1,4 @@
+--require dotenv/config
+--reporter spec
+--exit
+--check-leaks

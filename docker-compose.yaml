@@ -1,0 +1,15 @@
+version: '3.4'
+services:
+  # Local development Postgres databas
+  pg:
+    # https://hub.docker.com/_/postgres/
+    # Exposes port 5432 on container
+    # We publishes the container port 5432 to the host port 5505
+    image: postgres:9.5
+    ports:
+      # HOST:CONTAINER
+      - '5506:5432'
+    environment:
+      POSTGRES_PASSWORD: passWORD!
+      POSTGRES_USER: postgres
+      POSTGRES_DB: postgres

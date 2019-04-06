@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": false,
+    "lib": [
+      "es2015"
+    ]
+  },
+  "include": [
+    "scripts",
+    "src"
+  ]
+}
